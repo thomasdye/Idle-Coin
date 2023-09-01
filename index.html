@@ -7,13 +7,17 @@
         <link rel="stylesheet" href="gameStyles.css">
     </head>    
 <body>
-    <div id="gameContainer">
-        <p>Coins: <span id="coinCount">0</span></p>
-        <div id="progressContainer">
-            <div id="progressBar"></div>
+    <div class="container">
+        <div class="progressContainer">
+            <label class="barLabel">Copper</label>
+            <div class="progressBar" id="copperBar"></div>
         </div>
-        <button id="upgradeButton">Upgrade (10 coins) - Faster Filling</button>
-    </div>
+        <div class="progressContainer">
+            <label class="barLabel">Silver</label>
+            <div class="progressBar" id="silverBar"></div>
+        </div>
+        <p id="coinCount">Coins: 0</p>
+    </div>    
     <script src="game.js"></script>
 </body>
 </html>
